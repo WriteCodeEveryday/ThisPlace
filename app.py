@@ -78,6 +78,9 @@ def hashToLatLng(fourwords):
 def tp_without_www():
     return 'j0dTZm9wW_QK1y-akch5sQKKZXTWAAH5OXJpaa90LJc.qmQ7Ba17QUSzsS58ZGPuVaAjT2_QTE_bU1UvqETPGbs'
 
+@get('/.well-known/acme-challenge/BwTYpFmdfh6C3VVGXoIMSyzlsdhkDeEIqjqYotzcjd4')
+def tp_with_www():
+    return 'BwTYpFmdfh6C3VVGXoIMSyzlsdhkDeEIqjqYotzcjd4.qmQ7Ba17QUSzsS58ZGPuVaAjT2_QTE_bU1UvqETPGbs'
 
 if __name__ == '__main__':
     run(host='localhost', port=8080)
