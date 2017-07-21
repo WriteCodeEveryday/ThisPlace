@@ -24,12 +24,12 @@ def serve_static(filename):
 
 @get('/')
 def index():
-    return template('map', lat=None, lng=None)
+    return template('map', lat=25.9910484, lng=-80.3377181)
 
 
-@get('/help.html')
-def help():
-    return template('help', err=None, **example_locs)
+# @get('/help.html')
+# def help():
+#     return template('help', err=None, **example_locs)
 
 
 @get('/<fourwords>')
@@ -85,4 +85,4 @@ def tp_with_www():
 if __name__ == '__main__':
     run(host='localhost', port=8080)
 
-app = bottle.default_app()
+app = bottle.run(port=443)
