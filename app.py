@@ -74,6 +74,10 @@ def hashToLatLng(fourwords):
     except:
         abort(404)
 
+@get('/.well-known/acme-challenge/j0dTZm9wW_QK1y-akch5sQKKZXTWAAH5OXJpaa90LJc')
+def tp_without_ww():
+    return 'j0dTZm9wW_QK1y-akch5sQKKZXTWAAH5OXJpaa90LJc.qmQ7Ba17QUSzsS58ZGPuVaAjT2_QTE_bU1UvqETPGbs'
+
 
 if __name__ == '__main__':
     run(host='localhost', port=8080)
