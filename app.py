@@ -24,7 +24,7 @@ def serve_static(filename):
 
 @get('/')
 def index():
-    return template('map', lat=25.9910484, lng=-80.3377181)
+    return template('map', lat=None, lng=None)
 
 
 # @get('/help.html')
