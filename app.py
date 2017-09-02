@@ -74,9 +74,9 @@ def hashToLatLng(fourwords):
     except:
         abort(404)
 
-@get('/.well-known/acme-challenge/j0dTZm9wW_QK1y-akch5sQKKZXTWAAH5OXJpaa90LJc')
+@get('/.well-known/acme-challenge/JgePqyxFcoPO3EvGrK5ZvYj4x25WR-3xwyGvQJ59e1s')
 def tp_without_www():
-    return 'j0dTZm9wW_QK1y-akch5sQKKZXTWAAH5OXJpaa90LJc.qmQ7Ba17QUSzsS58ZGPuVaAjT2_QTE_bU1UvqETPGbs'
+    return 'JgePqyxFcoPO3EvGrK5ZvYj4x25WR-3xwyGvQJ59e1s.qmQ7Ba17QUSzsS58ZGPuVaAjT2_QTE_bU1UvqETPGbs'
 
 @get('/.well-known/acme-challenge/BwTYpFmdfh6C3VVGXoIMSyzlsdhkDeEIqjqYotzcjd4')
 def tp_with_www():
